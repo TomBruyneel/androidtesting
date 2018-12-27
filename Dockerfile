@@ -13,4 +13,3 @@ RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" 
 RUN apt-get -y update
 RUN apt-get -y install mono-devel
 RUN npm install -g appcenter-cli
-RUN appcenter test run uitest --uitest-tools-dir "./tools" --app "Tom_Bruyneel/Q8-Smiles" --devices "Tom_Bruyneel/huawei" --app-path "./qeight_1.0.28-internal-uat.apk"  --test-series "master" --locale "en_US" --build-dir "./Q8.UITest/bin/Debug" --include-category UITest --token fd16e08889f32baa020decffbeb3b747a3c500bf
